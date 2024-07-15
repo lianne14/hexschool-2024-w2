@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #00FFA3;
+}
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+.light{
+    color: #fff;
+}
+.d-flex{
+    display: flex;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
+.fww{
+    flex-wrap: wrap;
+}
+.fdc{
+    flex-direction: column;
+}
+.mb-m{
+    margin-bottom: 36px;
+}
+.gap-s{
+    gap: 2%;
+}
+.gap-m{
+    gap: 6%;
+}
+.gap-l{
+    gap: 14%;
+}
+.no-wrap{
+    text-wrap: nowrap;
+}
+section{
+    padding: 160px 0;
+}
+.w-half{
+    width: calc(100% / 2);
+}
+/* header */
+header{
+    background-color: #000;
+    color: #fff;
+}
+nav ul li{
+    text-align: center;
+}
+nav a{
+    display: block;
+    padding: 52px 0;
+}
+h1{
+    font-size: 128px;
+    text-align: right;
+    color: #00FFA3;
+}
+h2{
+    font-size: 64px;
+}
+.txt{
+    width: 50%;
+}
+.btn a{
+    color: #000;
+    background-color: #fff;
+    padding: 12px 24px;
+    width: 30%;
+    margin-left: auto;
+    border-radius: 44px;
+}
+/* intro */
+.intro{
+    background-image: url(/assets/img/background-img.png);
+    background-position: top center;
+    background-size: cover;
+    color: #fff;
+}
+h3{
+    font-size: 24px;
+}
+.star img{
+    display: inline-block;
+    width: 6.2%;
+}
+picture{
+    gap: 1%;
+}
+/* about me */
+h4{
+    font-size: 20px;
+}
+.item{
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 2%);
+    padding: 16px;
+    margin: 10px;
+    width: calc(90% / 2);
+}
+aside{
+    width: 40%;
+}
+article{
+    background:linear-gradient(#050014,#01021E);
+    padding: 96px 0;
+}
+article img{
+    width: 168px;
+}
+article a{
+    display: inline-block;
+    border-radius: 42px;
+    margin-right: 20px;
+}
+article a:hover{
+    box-shadow: 0px 0px 23px rgb(197 197 197);
+    transition: 0.1s;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project .btn a{
+    background-color: #000;
+    color: #fff;
+    margin-left: 0;
+}
+footer{
+    background-color: #000;
+}
+footer p{
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
