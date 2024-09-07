@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/scss/reset.css">
     <link rel="stylesheet" href="../assets/scss/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
                 <div class="txt">
                     <h2>Hi</h2>
                     <h2>I’m a front-end developer</h2>
-                    <h1> William</h1>
+                    <h1 data-aos="fade-up"> William</h1>
                     <div class="btn">
                         <a href="#" class=" d-flex aic jcsb">
                             <p>contact me</p>
@@ -41,7 +42,7 @@
         <section class="intro">
             <div class="container">
             <div class="d-flex gap-m">
-                <div class="txt">
+                <div class="txt" data-aos="fade-right">
                     <h2 class="mb-m">Introduction</h2>
                     <h3 class="mb-m">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</h3>
                     <div class="star">
@@ -52,13 +53,16 @@
                 </div>
                 <picture class="d-flex">
                     <source srcset="../assets/img/sparkle.png" media="(orientation: portrait)" />
-                    <img src="../assets/img/sparkle.png" alt="bigsparkleimg">
+                    <img src="../assets/img/sparkle.png" alt="bigsparkleimg" data-aos="fade-up"
+                    data-aos-duration="400">
                     <source srcset="../assets/img/photographer.png" media="(orientation: portrait)" />
-                    <img src="../assets/img/photographer.png" alt="photographerimg">
+                    <img src="../assets/img/photographer.png" alt="photographerimg" data-aos="fade-down"
+                    data-aos-duration="600">
                     <source srcset="./img/people-2.png" media="(orientation: portrait)" />
-                    <img src="../assets/img/people-2.png" alt="peopleimg">
+                    <img src="../assets/img/people-2.png" alt="peopleimg" data-aos="fade-up"
+                    data-aos-duration="1000">
                 </picture>
-            </div>
+            </div> 
         </div>
 
         </section>
@@ -66,7 +70,9 @@
         <!-- about me -->
         <section class="container">
             <div class="d-flex jcsb aic">
-                <ul class="d-flex fww w-half">
+                <ul class="d-flex fww w-half" data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
                     <!-- 01 item1 -->
                     <li class="item">
                         <h4>01</h4>
@@ -92,7 +98,7 @@
                         <p>Collaborates and shares ideas.</p>
                     </li>
                 </ul>
-                <aside>
+                <aside data-aos="fade-left">
                     <h2 class="mb-m">About Me</h2>
                     <h3>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</h3>
                 </aside>
@@ -103,14 +109,17 @@
         <article>
             <div class="container">
                 <div class="d-flex aic jcsb light">
-                    <div class="d-flex gap-m no-wrap">
+                    <div class="d-flex gap-m no-wrap"  data-aos="fade-right">
                         <h2>CONTACT ME</h2>
                         <img src="../assets/img/vector.svg" alt="vetor-img">
                     </div>
                     <ul class="social d-flex jcsb">
-                        <li><a href="#"><img src="../assets/img/discord.png" alt="discord-img"></a></li>
-                        <li><a href="#"><img src="../assets/img/instagram.png" alt="instagram-img"></a></li>
-                        <li><a href="#"><img src="../assets/img/message.png" alt="message-img"></a></li>
+                        <li data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="400"><a href="#"><img src="../assets/img/discord.png" alt="discord-img"></a></li>
+                        <li data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="600"><a href="#"><img src="../assets/img/instagram.png" alt="instagram-img"></a></li>
+                        <li data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><a href="#"><img src="../assets/img/message.png" alt="message-img"></a></li>
                     </ul>
                 </div>
             </div>
@@ -146,5 +155,10 @@
     <footer>
         <p class="container">all rights reserved @hexschool2023</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
